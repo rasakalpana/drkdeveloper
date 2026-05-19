@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up Form</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#0b0b0b;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      color:white;
+    }
+
+    .container{
+      width:350px;
+      background:#111;
+      padding:30px;
+      border-radius:15px;
+      border:2px solid #ff1493;
+      box-shadow:0 0 15px #ff1493;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:25px;
+      color:#ff1493;
+      font-size:28px;
+    }
+
+    .field{
+      margin-bottom:18px;
+    }
+
+    label{
+      display:block;
+      margin-bottom:8px;
+      font-size:15px;
+    }
+
+    input{
+      width:100%;
+      padding:12px;
+      border:none;
+      outline:none;
+      border-radius:8px;
+      background:#222;
+      color:white;
+      font-size:14px;
+    }
+
+    input:focus{
+      border:1px solid #ff1493;
+    }
+
+    .checkbox-field{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:20px;
+    }
+
+    .checkbox-field input{
+      width:auto;
+    }
+
+    .btn{
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:8px;
+      background:#ff1493;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ff4db8;
+    }
+
+    .footer{
+      text-align:center;
+      margin-top:20px;
+      font-size:13px;
+      color:#aaa;
+    }
+
+    .footer a{
+      color:#ff1493;
+      text-decoration:none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1 class="title">SIGN UP FORM</h1>
+
+    <form>
+
+      <div class="field">
+        <label>Username</label>
+        <input type="text" placeholder="Enter username" required>
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com" required>
+      </div>
+
+      <div class="field">
+        <label>Password</label>
+        <input type="password" placeholder="At least 8 characters" required>
+      </div>
+
+      <div class="field">
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Re-type password" required>
+      </div>
+
+      <div class="checkbox-field">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+      </div>
+
+      <button type="submit" class="btn">   Sign Up</button>
+
+    </form>
+
+     <div class="footer">
+      I have an account?
+      <a href="index.html">Sign In</a>
+        </div>
+    
+    <div class="footer">
+      Made by DRK DEVELOPER
+    </div>
+
+  </div>
+
+</body>
+</html>

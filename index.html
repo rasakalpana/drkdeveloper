@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In Form</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#0b0b0b;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      color:white;
+    }
+
+    .container{
+      width:350px;
+      background:#111;
+      padding:30px;
+      border-radius:15px;
+      border:2px solid #ff1493;
+      box-shadow:0 0 15px #ff1493;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:25px;
+      color:#ff1493;
+      font-size:28px;
+    }
+
+    .field{
+      margin-bottom:18px;
+    }
+
+    label{
+      display:block;
+      margin-bottom:8px;
+      font-size:15px;
+    }
+
+    input{
+      width:100%;
+      padding:12px;
+      border:none;
+      outline:none;
+      border-radius:8px;
+      background:#222;
+      color:white;
+      font-size:14px;
+    }
+
+    input:focus{
+      border:1px solid #ff1493;
+    }
+
+    .options{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:20px;
+      font-size:14px;
+    }
+
+    .options a{
+      color:#ff1493;
+      text-decoration:none;
+    }
+
+    .btn{
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:8px;
+      background:#ff1493;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ff4db8;
+    }
+
+    .footer{
+      text-align:center;
+      margin-top:20px;
+      font-size:14px;
+      color:#aaa;
+    }
+
+    .footer a{
+      color:#ff1493;
+      text-decoration:none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1 class="title">SIGN IN</h1>
+
+    <form>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="field">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" required>
+      </div>
+
+      <div class="options">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+
+        <a href="forgetpassword.html">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="btn">Sign In</button>
+
+    </form>
+
+    <div class="footer">
+      Don't have an account?
+      <a href="signup.html">Sign Up</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
